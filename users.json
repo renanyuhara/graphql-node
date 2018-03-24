@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "name": "Renan",
+        "age": 30,
+        "books": [
+            {
+                "id": 1,
+                "title": "I Am The Legend",
+                "author": "Richard Matheson"
+            },
+            {
+                "id": 2,
+                "title": "Animal Farm: A Fairy Story",
+                "author": "George Orwell" 
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Yuhara",
+        "age": 31,
+        "books": [
+            {
+                "id": 1,
+                "title": "1984",
+                "author": "George Orwell"
+            }
+        ]
+    }
+]

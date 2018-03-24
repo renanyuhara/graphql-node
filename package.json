@@ -1,0 +1,20 @@
+{
+  "name": "graphql-node",
+  "version": "1.0.0",
+  "description": "Test of GraphQL with Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "GraphQL",
+    "NodeJS"
+  ],
+  "author": "Renan Yuhara",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2"
+  }
+}
