@@ -24,7 +24,7 @@ let schema = new graphql.GraphQLSchema({
     query: new graphql.GraphQLObjectType({
         name: 'Query',
         fields: {
-            user: {
+            user: { //http://localhost:3000/user?query={user(id:2),{name}}
                 type: userType,
                 args: {
                     id: {
@@ -36,6 +36,12 @@ let schema = new graphql.GraphQLSchema({
                         return (user.id == args.id)
                     });
                     return response;
+                }
+            },
+            users: { //http://localhost:3000/user?query={users,{name}}
+                type: new graphql.GraphQLList(userType),
+                resolve: function(_, args) {
+                    return users;
                 }
             }
         }
